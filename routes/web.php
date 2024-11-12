@@ -15,3 +15,8 @@ use App\Http\Controllers\CrudController;
 */
 
 Route::get('/home', [CrudController::class, 'home']);
+Route::get('/clientes', [CrudController::class, 'clientes']);
+Route::post('/guardar-clientes', [CrudController::class, 'guardarCL']);
+Route::get('/editCL/{id}', [CrudController::class, 'editarCL']);
+Route::put('/updateCL/{id}', [CrudController::class, 'updateCL']);
+Route::get('/empleados', [CrudController::class, 'empleados']);
