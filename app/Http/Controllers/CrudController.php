@@ -22,10 +22,10 @@ class CrudController extends Controller
         return view('/clientes', compact('getClientes'));
     }
 
-    public function guardarCL(){
+    public function guardarCL(Request $request){
         Clientes::create($request->all());
         //dd($request);
-        return redirect()->to('/clientes');
+        return redirect()->to('/home');
     }
 
     public function editarCL($id){
@@ -37,13 +37,13 @@ class CrudController extends Controller
         $updateCL = Clientes::findOrFail($id);
         $requestCL = $request->all();
         $updateCL->update($requestCL);
-        return redirect()->to('/clientes');
+        return redirect()->to('/home');
     }
 
     public function deleteCL($id){
         $eliminarCL = Clientes::findOrFail($id);
-        $requestCL->delete();
-        return redirect()->to('/clientes');
+        $eliminarCL->delete();
+        return redirect()->to('/home');
     }
 
     //CRUD EMPLEADOS
@@ -52,10 +52,10 @@ class CrudController extends Controller
         return view('/empleados', compact('getEmpleados'));
     }
 
-    public function guardarEM(){
+    public function guardarEM(Request $request){
         Empleados::create($request->all());
         //dd($request);
-        return redirect()->to('/empleados');
+        return redirect()->to('/home');
     }
 
     public function editarEM($id){
@@ -67,12 +67,12 @@ class CrudController extends Controller
         $updateEM = Empleados::findOrFail($id);
         $requestEM = $request->all();
         $updateEM->update($requestEM);
-        return redirect()->to('/empleados');
+        return redirect()->to('/home');
     }
 
     public function deleteEM($id){
         $eliminarEM = Empleados::findOrFail($id);
-        $requestEM->delete();
-        return redirect()->to('/empleados');
+        $eliminarEM->delete();
+        return redirect()->to('/home');
     }
 }
