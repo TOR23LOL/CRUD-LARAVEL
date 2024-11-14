@@ -1,18 +1,33 @@
-body{
-   font-family: 'Times New Roman', Times, serif;
-}
-
-#header {
+*,*::after,*::before{
+    box-sizing: border-box;
     padding: 0;
-    background-color:#070066;
+    margin: 0;
+}
+#body{
+    background-color:  #a1c2e7;
 
 }
 
+.header {
+    padding: 0;
+    background-color: #000000;
+}
 
-nav {
+#a{
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+}
+
+.nav {
     display: flex;
     justify-content: space-between; 
-    align-items: center; 
+    align-items: center;
+    border-bottom: 1px groove rgb(255, 255, 255);
+    .li #a{
+        display: flex;
+        align-content: center;
+    }
 }
 
 #img {
@@ -20,32 +35,165 @@ nav {
     height: auto;
 }
 
-ul {
-    background-color: aquamarine;
+.ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 20px;
 }
 
-ul li {
-    margin-left: 20px; 
+.ul, .li {
+    margin-left: 20px;
+    padding: 8px 12px; /* Agrega padding para un mejor espacio */
+    transition: transform 0.3s, background-color 0.3s; /* Transición suave para el hover */
+    border-radius: 25px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura que el padding y el borde no alteren el tamaño */
 }
 
-ul li a {
+#ul, #li, #a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 16px;
+    transition: color 0.3s; /* Solo transición de color */
+}
+svg{
+    color: white;
 }
 
+/*#header,#ul, #li:hover {
+    background-color: rgb(13, 118, 179); /* Fondo al pasar el ratón
+    transform: scale(1.05); /* Agranda el <li> ligeramente, sin afectar el contenido del enlace
+}*/
+
+#haeder #ul, #li, #a:hover {
+    color: rgb(13, 118, 179);
+    transform: scale(1.05);
+}
 
 #marquee {
     margin-top: 10px;
-    text-align: center;
     font-size: 20px;
     font-weight: bold;
-    background-color: #f0d3a544;
+    background-color: #5e7588b0;
     border-radius: 50px;
-    border: 2px solid rgb(221, 79, 79);
+    border: 2px solid rgb(5, 56, 151);
+    color: rgba(0, 255, 221, 0.8);
+}
+
+#main, #h2{
+    text-align: center;
+    color: rgb(38, 38, 90);
+}
+.button{
+    background-color: #000000;
+    color: white;
+    margin-bottom: 20px;
+    padding-inline: 5px;
+    border: 4px groove rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.table-clientes{
+    text-align: center;
+    color:rgb(13, 94, 114)
+}
+.table-empleados{
+    text-align: center;
+    color:rgb(13, 94, 114)
+}
+
+#contacto-2{
+    color: aqua;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: column; /* Cambié a columna para que el título y las columnas de redes se distribuyan de forma vertical */
+    align-items: center; /* Centra todo el contenido horizontalmente */
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(235, 157, 167);
+}
+
+.div-ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ul{
+    margin: 0;
+    padding: 0;
+    .li, a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+}
+
+.redes-sociales #h3 {
+    color: rgb(0, 82, 129);
+    font-size: 2rem; /* Ajusté el tamaño del título */
+    text-align:justify;
+    margin-bottom: 30px; /* Añadí espacio debajo del título */
+}
+
+/* Contenedor de los bloques de contacto */
+.redes-sociales .contactos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px 120px; /* Espacio entre los bloques de contacto */
+    flex-wrap: wrap; /* Los elementos se acomodan en varias filas si no caben en una sola */
+    text-align: center; /* Centra los contenidos de cada columna */
+}
+/* Estilos de las listas */
+.redes-sociales .ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los elementos de la lista */
+    padding: 0;
+    list-style: none;
+}
+
+.redes-sociales .ul .li {
+    margin: 5px 0;
+}
+
+/* Estilo para los enlaces */
+.redes-sociales .ul .li #a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.redes-sociales .ul .li #a:hover {
+    color: #000000;
+    background-color: rgb(13, 118, 179);
+    border-radius: 25px;
+    /*transform: scale(1.1);*/
+}
+
+@media(max-width:600px){
+    .header .nav, .ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px 0;
+        li{margin: 0; padding: 0;}
+    }
+    .table-clientes,.table-empleados {
+        width: 100%;
+        table-layout: fixed;
+
+        .table .th, .table .td {
+            font-size: 14px;
+        }
+        .table .th:nth-child(1),
+        .table .td:nth-child(1) {
+            display: none; /* Ocultar la cuarta columna */
+        }
+    }
 }
