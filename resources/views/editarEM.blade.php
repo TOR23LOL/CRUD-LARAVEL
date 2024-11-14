@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GUARDAR CLIENTES</title>
+    <title>EDITAR EMPLEADO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
@@ -13,25 +13,27 @@
             <img src="https://placehold.co/100" alt="Logo">
             <ul>
                 <li><a href="/home">INICIO</a></li>
-                <li><a href="/empleados">EMPLEADOS</a></li>
+                <li><a href="/clientes">CLIENTES</a></li>
                 <li><a href="#redes-sociales">REDES SOCIALES</a></li>
             </ul>
         </nav>
-        <marquee behavior="" direction="right"><h1>CLIENTES</h1></marquee>
+        <marquee behavior="" direction="right"><h1>EMPLEADOS</h1></marquee>
+        <a href="/home"><button>REGRESAR A EMPLEADOS</button></a>
     </header>
     <main>
-        <h2>GUARDAR CLIENTES</h2>
-        <form action="/guardarCL" method="post">
+        <h2>EDITAR EMPLEADOS</h2>
+        <form action="/updateEM/{{$editEmpleados->id}}" method="post">
             @csrf
+            @method('put')
             <label for="nombre">Nombre</label><br>
-            <input type="text" name="nombre" id="nombre"><br>
+            <input value="{{$editEmpleados->nombre}}" type="text" name="nombre" id="nombre"><br>
             <label for="apellido">Apellido</label><br>
-            <input type="text" name="apellido" id="apellido"><br>
+            <input value="{{$editEmpleados->apellido}}" type="text" name="apellido" id="apellido"><br>
             <hr>
-            <button type="submit">Guardar</button>
+            <button type="submit">Actualizar</button>
         </form>
     </main>
-    <footer id="contactos">
+    <footer>
         <h3>CONTACTOS</h3>
         <div>
             <h4>TATIANA</h4>
