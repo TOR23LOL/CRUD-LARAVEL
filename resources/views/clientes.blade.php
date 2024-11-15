@@ -34,35 +34,35 @@
         </form>
     </main>
     <footer id="contactos" class="redes-sociales">
-    <h3 id="h3">CONTACTOS</h3>
-    <div class="contactos-container">
-        <div class="contacto">
-            <h4><i class="fa-solid fa-heart"></i> TATIANA <i class="fa-solid fa-heart"></i></h4>
-            <ul class="ul">
-                <li class="li"><a id="a" href="https://www.facebook.com/tatiana.lizbeth.505">FACEBOOK</a></li>
-            </ul>
-        </div>
-        <div class="contacto" id="contacto-2">
-            <h4><i class="fa-solid fa-heart"></i> TOR23 <i class="fa-solid fa-heart"></i></h4>
-            <div class="div-ul">
+        <h3 id="h3">CONTACTOS</h3>
+        <div class="contactos-container">
+            <div class="contacto">
+                <h4><i class="fa-solid fa-heart"></i> TATIANA <i class="fa-solid fa-heart"></i></h4>
                 <ul class="ul">
-                    <li class="li"><a id="a" href="https://www.youtube.com/@TOR23">YOUTUBE</a></li>
-                    <li class="li"><a id="a" href="https://www.facebook.com/TOR23LOL">FACEBOOK</a></li>
+                    <li class="li"><a id="a" href="https://www.facebook.com/tatiana.lizbeth.505">FACEBOOK</a></li>
                 </ul>
+            </div>
+            <div class="contacto" id="contacto-2">
+                <h4><i class="fa-solid fa-heart"></i> TOR23 <i class="fa-solid fa-heart"></i></h4>
+                <div class="div-ul">
+                    <ul class="ul">
+                        <li class="li"><a id="a" href="https://www.youtube.com/@TOR23">YOUTUBE</a></li>
+                        <li class="li"><a id="a" href="https://www.facebook.com/TOR23LOL">FACEBOOK</a></li>
+                    </ul>
+                    <ul class="ul">
+                        <li class="li"><a id="a" href="https://www.instagram.com/tor23lol/">INSTAGRAM</a></li>
+                        <li class="li"><a id="a" href="https://www.tiktok.com/@tor23lol">TIKTOK</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacto">
+                <h4><i class="fa-solid fa-heart"></i> MARJORIE <i class="fa-solid fa-heart"></i></h4>
                 <ul class="ul">
-                    <li class="li"><a id="a" href="https://www.instagram.com/tor23lol/">INSTAGRAM</a></li>
-                    <li class="li"><a id="a" href="https://www.tiktok.com/@tor23lol">TIKTOK</a></li>
+                    <li class="li"><a id="a" href="https://www.facebook.com/marjorie.simbana.50">FACEBOOK</a></li>
                 </ul>
             </div>
         </div>
-        <div class="contacto">
-            <h4><i class="fa-solid fa-heart"></i> MARJORIE <i class="fa-solid fa-heart"></i></h4>
-            <ul class="ul">
-                <li class="li"><a id="a" href="https://www.facebook.com/marjorie.simbana.50">FACEBOOK</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
