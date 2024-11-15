@@ -90,26 +90,26 @@
         <div class="contacto">
             <h4><i class="fa-solid fa-heart"></i> TATIANA <i class="fa-solid fa-heart"></i></h4>
             <ul class="ul">
-                <li class="li"><a id="a" href="https://www.facebook.com/tatiana.lizbeth.505">FACEBOOK</a></li>
+                <li class="li"><a id="a" target="_blank" href="https://www.facebook.com/tatiana.lizbeth.505">FACEBOOK</a></li>
             </ul>
         </div>
         <div class="contacto" id="contacto-2">
             <h4><i class="fa-solid fa-heart"></i> TOR23 <i class="fa-solid fa-heart"></i></h4>
             <div class="div-ul">
                 <ul class="ul">
-                    <li class="li"><a id="a" href="https://www.youtube.com/@TOR23">YOUTUBE</a></li>
-                    <li class="li"><a id="a" href="https://www.facebook.com/TOR23LOL">FACEBOOK</a></li>
+                    <li class="li"><a id="a" target="_blank" href="https://www.youtube.com/@TOR23">YOUTUBE</a></li>
+                    <li class="li"><a id="a" target="_blank" href="https://www.facebook.com/TOR23LOL">FACEBOOK</a></li>
                 </ul>
                 <ul class="ul">
-                    <li class="li"><a id="a" href="https://www.instagram.com/tor23lol/">INSTAGRAM</a></li>
-                    <li class="li"><a id="a" href="https://www.tiktok.com/@tor23lol">TIKTOK</a></li>
+                    <li class="li"><a id="a" target="_blank" href="https://www.instagram.com/tor23lol/">INSTAGRAM</a></li>
+                    <li class="li"><a id="a" target="_blank" href="https://www.tiktok.com/@tor23lol">TIKTOK</a></li>
                 </ul>
             </div>
         </div>
         <div class="contacto">
             <h4><i class="fa-solid fa-heart"></i> MARJORIE <i class="fa-solid fa-heart"></i></h4>
             <ul class="ul">
-                <li class="li"><a id="a" href="https://www.facebook.com/marjorie.simbana.50">FACEBOOK</a></li>
+                <li class="li"><a id="a" target="_blank" href="https://www.facebook.com/marjorie.simbana.50">FACEBOOK</a></li>
             </ul>
         </div>
     </div>
